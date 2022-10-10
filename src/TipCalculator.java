@@ -44,4 +44,6 @@ public class TipCalculator {
     public double perPersonTotalCost() {
         return (perPersonCostBeforeTip() + perPersonTipAmount());
     }
+
+
 }

@@ -40,13 +40,13 @@ public class Main {
 
         //printing the receipt
         System.out.println("----------------------------------------------------------");
-        System.out.println("Total bill before tip: " + tipCalc.getTotalBillBeforeTip());
+        System.out.println("Total bill before tip: " + formatter.format(tipCalc.getTotalBillBeforeTip()));
         System.out.println("Tip percentage: " + tipCalc.getTipPercentage());
-        System.out.println("Total tip: " + tipCalc.tipAmount());
-        System.out.println("Total bill with tip: " + tipCalc.totalBill());
+        System.out.println("Total tip: " + formatter.format(tipCalc.tipAmount()));
+        System.out.println("Total bill with tip: " + formatter.format(tipCalc.totalBill()));
         System.out.println("Party: " + party);
-        System.out.println("Per person cost before tip: " + tipCalc.perPersonCostBeforeTip());
-        System.out.println("Tip per person: " + tipCalc.perPersonTipAmount());
-        System.out.println("Total cost per person: " + tipCalc.perPersonTotalCost());
+        System.out.println("Per person cost before tip: " + formatter.format(tipCalc.perPersonCostBeforeTip()));
+        System.out.println("Tip per person: " + formatter.format(tipCalc.perPersonTipAmount()));
+        System.out.println("Total cost per person: " + formatter.format(tipCalc.perPersonTotalCost()));
     }
 }
